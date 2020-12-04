@@ -1,0 +1,6 @@
+debug/
+taget/
+
+Cargo.lock
+
+**/*.rs.bk
