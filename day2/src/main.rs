@@ -17,11 +17,13 @@ fn main() {
 				let bounds: Vec<&str> = groups[0].split('-').collect();
 				let min = &bounds[0].parse::<usize>().unwrap(); 
 				let max = &bounds[1].parse::<usize>().unwrap();
-				let character = &groups[1].trim_end_matches(':');
+				let character = groups[1].trim_end_matches(':');
 				let pw = &groups[2];
-				let num = pw.matches(character).count();
 
-				if num <= *max && num >= *min {
+				let min_char = &pw.chars().nth(min-1).unwrap().to_string();
+				let max_char = &pw.chars().nth(max-1).unwrap().to_string();
+
+				if (character.eq(min_char))^(character.eq(max_char)) {
 					valid_count += 1;
 				}
 			}
