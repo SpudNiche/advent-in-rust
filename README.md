@@ -9,4 +9,4 @@ Source: [Advent of Code](https://adventofcode.com/2020)
 - [x] Day 3: Toboggan Trajectory
 - [x] Day 4: Passport Processing
 - [x] Day 5: Binary Boarding
-- [ ] Day 6: Custom Customs
+- [x] Day 6: Custom Customs
