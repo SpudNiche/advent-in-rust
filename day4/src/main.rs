@@ -37,14 +37,16 @@ fn main() {
 		cid: 0,
 	};
 
+	// Get number of lines (there is definitely a better way to do this)
 	let mut line_count = 0;
 	if let Ok(lines) = read_lines(f) {
-		for line in lines {
+		for _line in lines {
 			line_count += 1;
 		}
 		println!("Lines: {}", line_count);
 	}
 
+	// Parse file and validate passports
 	if let Ok(lines) = read_lines(f) {
 		for line in lines {
 			if let Ok(cur_line) = line {
@@ -73,8 +75,8 @@ fn main() {
 					if result == true {
 						valid_passport_count += 1;	
 					}
-					//println!("Result: {:?}", result);	
-					//println!();
+					println!("Result: {:?}", result);	
+					println!();
 
 					// Reset the passport struct
 					pp.byr = 0;
@@ -109,14 +111,86 @@ where P: AsRef<Path>, {
 
 fn validate_passport(passport: &Passport) -> bool {
 	let mut r: bool = true;
-	if (passport.byr == 0) || 
-	   (passport.iyr == 0) ||
-	   (passport.eyr == 0) ||
-	   (passport.hgt == String::from("")) || 
+
+//	println!("byr: {}, iyr: {}, eyr: {}", passport.byr, passport.iyr, passport.eyr);
+	
+	if (passport.byr == 0 || passport.byr < 1920 || passport.byr > 2002) || 
+	   (passport.iyr == 0 || passport.iyr < 2010 || passport.iyr > 2020) ||
+	   (passport.eyr == 0 || passport.eyr < 2020 || passport.eyr > 2030) {
+		println!("failed in part 1");
+		r = false;
+	}
+	if (passport.hgt == String::from("")) ||
 	   (passport.hcl == String::from("")) || 
 	   (passport.ecl == String::from("")) || 
 	   (passport.pid == String::from("")) {
+		println!("Failed in part 2");
 		r = false;
+	}
+
+	if r == true {
+		// Check height
+		if passport.hgt.contains("cm") {
+			let h = passport.hgt.strip_suffix("cm").unwrap().parse::<usize>().unwrap();
+			if h < 150 || h > 193 {
+				println!("Failed in cm check");
+				r = false;
+			}
+		} else if passport.hgt.contains("in") {
+			let h = passport.hgt.strip_suffix("in").unwrap().parse::<usize>().unwrap();
+			if h < 59 || h > 76 {
+				r = false;
+				println!("Failed in in check");
+			}
+		}
+	}	
+
+	if r == true {
+		// Check hair color
+		println!("hcl: {}", passport.hcl); 
+
+		if passport.hcl.starts_with("#") {
+			let t1 = passport.hcl.strip_prefix("#").unwrap().chars().all(|c| char::is_ascii_hexdigit(&c)); 
+			println!("stripped: {}", passport.hcl.strip_prefix("#").unwrap());
+			let t2 = passport.hcl.chars().count();
+			println!("count: {}", t2);
+			if t1 == false {
+				r = false;
+			} else if t2 != 7 {
+				r = false;
+			}
+		} else {
+			r = false;
+		}
+	}
+	
+	if r == true {
+		// Check eye color
+		match passport.ecl.as_str() {
+			"amb" => r = true,
+			"blu" => r = true,
+			"brn" => r = true,
+			"gry" => r = true,
+			"grn" => r = true,
+			"hzl" => r = true,
+			"oth" => r = true,
+			_ => r = false,
+		}	
+		if r == false {
+			println!("failed in ecl check");
+		}
+	}
+
+	if r == true {
+		// Check pid (9-digit number)
+		if passport.pid.len() != 9 {
+			println!("Failed in pid - too short");
+			r = false;	
+		}
+		if !passport.pid.chars().all(char::is_numeric) {
+			println!("Failed in pid, not numeric");
+			r = false;	
+		}
 	}
 	r
 }
