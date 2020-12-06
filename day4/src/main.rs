@@ -74,35 +74,45 @@ fn main() {
 					let mut flag: bool = true;
 
 					if  validate_parts_exist(&pp) == false {
-						println!("INVALID: Passport did not contain all parts");
+						//println!("INVALID: Passport did not contain all parts");
 						flag = false;
 					}
 					if  validate_byr(&pp) == false {
-						println!("INVALID BYR: {}", pp.byr);
+						//println!("INVALID BYR: {}", pp.byr);
 						flag = false;
+					} else {
+						//println!("VALID BYR: {}", pp.byr);
 					}
 					if  validate_iyr(&pp) == false {
-						println!("INVALID IYR: {}", pp.iyr);
+						//println!("INVALID IYR: {}", pp.iyr);
 						flag = false;
+					} else {
+						//println!("VALID IYR: {}", pp.iyr);
 					}
 					if  validate_eyr(&pp) == false {
-						println!("INVALID EYR: {}", pp.eyr);
+						//println!("INVALID EYR: {}", pp.eyr);
 						flag = false;
+					} else {
+						//println!("VALID EYR: {}", pp.eyr);
 					}
 					if  validate_hgt(&pp) == false {
-						println!("INVALID HGT: {}", pp.hgt);
+						//println!("INVALID HGT: {}", pp.hgt);
 						flag = false;
+					} else {
+						//println!("VALID HGT: {}", pp.hgt);
 					}
 					if  validate_hcl(&pp) == false {
-						println!("INVALID HCL: {}", pp.hcl);
+						//println!("INVALID HCL: {}", pp.hcl);
 						flag = false;
+					} else {
+						println!("VALID HCL: {}", pp.hcl);
 					}
 					if  validate_ecl(&pp) == false {
-						println!("INVALID ECL: {}", pp.ecl);
+						//println!("INVALID ECL: {}", pp.ecl);
 						flag = false;
 					}
 					if  validate_pid(&pp) == false {
-						println!("INVALID PID: {}", pp.pid);
+						//println!("INVALID PID: {}", pp.pid);
 						flag = false;
 					}
 
@@ -180,18 +190,17 @@ fn validate_eyr(passport: &Passport) -> bool {
 }
 	
 fn validate_hgt(passport: &Passport) -> bool {
-	let mut r: bool = true;
+	let mut r: bool = false;
 	if passport.hgt.contains("cm") {
 		let h = passport.hgt.strip_suffix("cm").unwrap().parse::<usize>().unwrap();
-		if h < 150 || h > 193 {
-			println!("Failed in cm check");
-			r = false;
+		if h >= 150 && h <= 193 {
+			r = true;
 		}
-	} else if passport.hgt.contains("in") {
+	} 
+	if passport.hgt.contains("in") {
 		let h = passport.hgt.strip_suffix("in").unwrap().parse::<usize>().unwrap();
-		if h < 59 || h > 76 {
-			r = false;
-			println!("Failed in in check");
+		if h >= 59 && h <= 76 {
+			r = true;
 		}
 	}
 	r

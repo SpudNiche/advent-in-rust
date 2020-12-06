@@ -1,1209 +1,230 @@
 Lines: 1169
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #888785
-stripped: 888785
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #866857
-stripped: 866857
-count: 7
-Result: true
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-failed in ecl check
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #694b7d
-stripped: 694b7d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in cm check
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #866857
-stripped: 866857
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-Failed in in check
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: 011a46
-Result: false
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #539335
-stripped: 539335
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #733820
-stripped: 733820
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-hcl: #866857
-stripped: 866857
-count: 7
-Failed in pid - too short
-Result: false
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #c5e354
-stripped: c5e354
-count: 7
-Result: true
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #5e0e07
-stripped: 5e0e07
-count: 7
-Result: true
-
-hcl: #866857
-stripped: 866857
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #b98e00
-stripped: b98e00
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #623a2f
-stripped: 623a2f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-hcl: #733820
-stripped: 733820
-count: 7
-Failed in pid - too short
-Result: false
-
-hcl: 8a6142
-Result: false
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #733820
-stripped: 733820
-count: 7
-Result: true
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #888785
-stripped: 888785
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #866857
-stripped: 866857
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #733820
-stripped: 733820
-count: 7
-Result: true
-
-hcl: #733820
-stripped: 733820
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in in check
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #623a2f
-stripped: 623a2f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Failed in pid - too short
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #4d8fe2
-stripped: 4d8fe2
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #623a2f
-stripped: 623a2f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in in check
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-hcl: #ceb3a1
-stripped: ceb3a1
-count: 7
-Result: true
-
-hcl: #623a2f
-stripped: 623a2f
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in cm check
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #888785
-stripped: 888785
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #8345d8
-stripped: 8345d8
-count: 7
-Result: true
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #6b5442
-stripped: 6b5442
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-failed in ecl check
-Result: false
-
-hcl: z
-Result: false
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #602927
-stripped: 602927
-count: 7
-Result: true
-
-hcl: #cfa07d
-stripped: cfa07d
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #888785
-stripped: 888785
-count: 7
-Result: true
-
-hcl: #623a2f
-stripped: 623a2f
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #341e13
-stripped: 341e13
-count: 7
-Result: true
-
-hcl: #fffffd
-stripped: fffffd
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #efcc98
-stripped: efcc98
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #888785
-stripped: 888785
-count: 7
-Result: true
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Result: true
-
-hcl: #a97842
-stripped: a97842
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #7d3b0c
-stripped: 7d3b0c
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-hcl: #18171d
-stripped: 18171d
-count: 7
-Failed in pid - too short
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #b6652a
-stripped: b6652a
-count: 7
-Result: true
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-Failed in part 1
-Result: false
-
-hcl: #c0946f
-stripped: c0946f
-count: 7
-Result: true
-
-Valid Passports: 146
+VALID HGT: 177cm
+VALID HGT: 187cm
+VALID HGT: 156cm
+VALID HGT: 193cm
+VALID HGT: 154cm
+VALID HGT: 161cm
+VALID HGT: 190cm
+VALID HGT: 185cm
+VALID HGT: 154cm
+VALID HGT: 191cm
+VALID HGT: 167cm
+VALID HGT: 193cm
+VALID HGT: 179cm
+VALID HGT: 186cm
+VALID HGT: 159cm
+VALID HGT: 181cm
+VALID HGT: 183cm
+VALID HGT: 160cm
+VALID HGT: 62in
+VALID HGT: 153cm
+VALID HGT: 69in
+VALID HGT: 152cm
+VALID HGT: 162cm
+VALID HGT: 185cm
+VALID HGT: 63in
+VALID HGT: 156cm
+VALID HGT: 154cm
+VALID HGT: 177cm
+VALID HGT: 169cm
+VALID HGT: 166cm
+VALID HGT: 175cm
+VALID HGT: 182cm
+VALID HGT: 155cm
+VALID HGT: 167cm
+VALID HGT: 184cm
+VALID HGT: 168cm
+VALID HGT: 63in
+VALID HGT: 158cm
+VALID HGT: 167cm
+VALID HGT: 166cm
+VALID HGT: 184cm
+VALID HGT: 172cm
+VALID HGT: 193cm
+VALID HGT: 161cm
+VALID HGT: 192cm
+VALID HGT: 152cm
+VALID HGT: 160cm
+VALID HGT: 188cm
+VALID HGT: 61in
+VALID HGT: 151cm
+VALID HGT: 178cm
+VALID HGT: 164cm
+VALID HGT: 189cm
+VALID HGT: 190cm
+VALID HGT: 72in
+VALID HGT: 151cm
+VALID HGT: 192cm
+VALID HGT: 166cm
+VALID HGT: 192cm
+VALID HGT: 191cm
+VALID HGT: 193cm
+VALID HGT: 174cm
+VALID HGT: 167cm
+VALID HGT: 74in
+VALID HGT: 192cm
+VALID HGT: 162cm
+VALID HGT: 177cm
+VALID HGT: 155cm
+VALID HGT: 150cm
+VALID HGT: 150cm
+VALID HGT: 61in
+VALID HGT: 75in
+VALID HGT: 164cm
+VALID HGT: 155cm
+VALID HGT: 173cm
+VALID HGT: 169cm
+VALID HGT: 184cm
+VALID HGT: 190cm
+VALID HGT: 174cm
+VALID HGT: 162cm
+VALID HGT: 192cm
+VALID HGT: 167cm
+VALID HGT: 180cm
+VALID HGT: 189cm
+VALID HGT: 71in
+VALID HGT: 164cm
+VALID HGT: 191cm
+VALID HGT: 164cm
+VALID HGT: 172cm
+VALID HGT: 157cm
+VALID HGT: 161cm
+VALID HGT: 158cm
+VALID HGT: 176cm
+VALID HGT: 150cm
+VALID HGT: 183cm
+VALID HGT: 183cm
+VALID HGT: 171cm
+VALID HGT: 166cm
+VALID HGT: 167cm
+VALID HGT: 178cm
+VALID HGT: 178cm
+VALID HGT: 67in
+VALID HGT: 188cm
+VALID HGT: 152cm
+VALID HGT: 60in
+VALID HGT: 180cm
+VALID HGT: 169cm
+VALID HGT: 177cm
+VALID HGT: 65in
+VALID HGT: 167cm
+VALID HGT: 161cm
+VALID HGT: 192cm
+VALID HGT: 75in
+VALID HGT: 166cm
+VALID HGT: 161cm
+VALID HGT: 74in
+VALID HGT: 189cm
+VALID HGT: 73in
+VALID HGT: 150cm
+VALID HGT: 176cm
+VALID HGT: 186cm
+VALID HGT: 176cm
+VALID HGT: 165cm
+VALID HGT: 160cm
+VALID HGT: 192cm
+VALID HGT: 189cm
+VALID HGT: 167cm
+VALID HGT: 178cm
+VALID HGT: 159cm
+VALID HGT: 162cm
+VALID HGT: 69in
+VALID HGT: 167cm
+VALID HGT: 190cm
+VALID HGT: 71in
+VALID HGT: 67in
+VALID HGT: 153cm
+VALID HGT: 187cm
+VALID HGT: 154cm
+VALID HGT: 157cm
+VALID HGT: 160cm
+VALID HGT: 184cm
+VALID HGT: 151cm
+VALID HGT: 190cm
+VALID HGT: 177cm
+VALID HGT: 186cm
+VALID HGT: 177cm
+VALID HGT: 189cm
+VALID HGT: 160cm
+VALID HGT: 155cm
+VALID HGT: 167cm
+VALID HGT: 170cm
+VALID HGT: 156cm
+VALID HGT: 179cm
+VALID HGT: 153cm
+VALID HGT: 187cm
+VALID HGT: 179cm
+VALID HGT: 160cm
+VALID HGT: 192cm
+VALID HGT: 171cm
+VALID HGT: 63in
+VALID HGT: 178cm
+VALID HGT: 178cm
+VALID HGT: 154cm
+VALID HGT: 173cm
+VALID HGT: 61in
+VALID HGT: 159cm
+VALID HGT: 163cm
+VALID HGT: 165cm
+VALID HGT: 155cm
+VALID HGT: 178cm
+VALID HGT: 65in
+VALID HGT: 167cm
+VALID HGT: 75in
+VALID HGT: 182cm
+VALID HGT: 71in
+VALID HGT: 186cm
+VALID HGT: 179cm
+VALID HGT: 175cm
+VALID HGT: 183cm
+VALID HGT: 156cm
+VALID HGT: 163cm
+VALID HGT: 174cm
+VALID HGT: 157cm
+VALID HGT: 153cm
+VALID HGT: 161cm
+VALID HGT: 154cm
+VALID HGT: 167cm
+VALID HGT: 163cm
+VALID HGT: 171cm
+VALID HGT: 65in
+VALID HGT: 178cm
+VALID HGT: 158cm
+VALID HGT: 163cm
+VALID HGT: 188cm
+VALID HGT: 178cm
+VALID HGT: 187cm
+VALID HGT: 160cm
+VALID HGT: 167cm
+VALID HGT: 174cm
+VALID HGT: 76in
+VALID HGT: 69in
+VALID HGT: 166cm
+VALID HGT: 183cm
+VALID HGT: 154cm
+VALID HGT: 158cm
+VALID HGT: 180cm
+VALID HGT: 176cm
+VALID HGT: 167cm
+VALID HGT: 163cm
+VALID HGT: 166cm
+VALID HGT: 183cm
+VALID HGT: 69in
+VALID HGT: 172cm
+VALID HGT: 150cm
+VALID HGT: 155cm
+VALID HGT: 159cm
+VALID HGT: 164cm
+VALID HGT: 183cm
+VALID HGT: 150cm
+VALID HGT: 69in
+VALID HGT: 73in
+VALID HGT: 173cm
+VALID HGT: 150cm
+VALID HGT: 185cm
+VALID HGT: 189cm
+VALID HGT: 182cm
+VALID HGT: 193cm
+VALID HGT: 160cm
+Valid Passports: 145
