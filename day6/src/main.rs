@@ -5,6 +5,7 @@ use std::env;
 use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
+use std::iter::FromIterator;
 
 fn main() {
     // Read in cmd line args
@@ -15,24 +16,37 @@ fn main() {
     if let Ok(lines) = read_lines(f) {
         let mut questions = Vec::new();
         let mut sum_ques = 0;
+        let mut people_in_group = 0;
         for (_index, line) in lines.enumerate() {
             let line = line.unwrap();
             if line != String::from("") {
                 for (_i, c) in line.chars().enumerate() {
                     questions.push(c);
                 }
+                people_in_group += 1;
             } else {
                 questions.sort();
-                questions.dedup();
-                sum_ques += questions.len();
+                let mut unique_ques = Vec::from_iter(questions.iter().cloned());
+                unique_ques.dedup();
+                for c in unique_ques {
+                    if people_in_group == questions.iter().filter(|&x| *x == c).count() {
+                        sum_ques += 1;
+                    }
+                }
                 questions.clear();
+                people_in_group = 0;
             }
             //println!("{}: {}", _index + 1, line);
         }
         // Do it one last time for the last entry
         questions.sort();
-        questions.dedup();
-        sum_ques += questions.len();
+        let mut unique_ques = Vec::from_iter(questions.iter().cloned());
+        unique_ques.dedup();
+        for c in unique_ques {
+            if people_in_group == questions.iter().filter(|&x| *x == c).count() {
+                sum_ques += 1;
+            }
+        }
         println!("Total: {}", sum_ques);
     }
 }
