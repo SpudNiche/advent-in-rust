@@ -16,15 +16,32 @@ fn main() {
         // Parse input line by line 
         // Thanks: https://riptutorial.com/rust/example/4275/read-a-file-line-by-line
         let mut max_seat: i16 = 0;
-        for (index, line) in lines.enumerate() {
+        let mut seats = Vec::new();
+        for (_index, line) in lines.enumerate() {
             let line = line.unwrap();
             let s = get_seat(&line);
+            seats.push(s);
             if s > max_seat {
                 max_seat = s;
             }
-            println!("{}: {}", index + 1, s);
+            //println!("{}: {}", _index + 1, s);
         }
-        println!("Max seat number: {}", max_seat);
+        // Sort the list of seats
+        seats.sort();
+        // Find your seat (it's the one that's missing in this list!)
+        let mut prev = 0;
+        let first_seat = first_seat(&seats);
+        for s in seats {
+            if s > first_seat {
+                if s != prev + 1 {
+                    let your_seat = s - 1;
+                    println!("Your seat: {}", your_seat);
+                    break;
+                }
+            }     
+            prev = s;
+        }
+        //println!("Max seat number: {}", max_seat);
     }
 }
 
@@ -72,4 +89,8 @@ fn get_seat(input: &str) -> i16 {
         seat = i16::from_str_radix(&temp, 2).unwrap();
     }
     seat
+}
+
+fn first_seat(v: &Vec<i16>) -> i16 {
+    *v.first().unwrap()
 }
