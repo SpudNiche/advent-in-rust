@@ -70,13 +70,45 @@ fn main() {
 				}
 				
 				if cur_line.len() <= 0 || line_num == line_count - 1 {
-					// Completed parsing passport, validate
-					let result = validate_passport(&pp);
-					if result == true {
+					// Completed parsing passport, validate it has everything it needs
+					let mut flag: bool = true;
+
+					if  validate_parts_exist(&pp) == false {
+						println!("INVALID: Passport did not contain all parts");
+						flag = false;
+					}
+					if  validate_byr(&pp) == false {
+						println!("INVALID BYR: {}", pp.byr);
+						flag = false;
+					}
+					if  validate_iyr(&pp) == false {
+						println!("INVALID IYR: {}", pp.iyr);
+						flag = false;
+					}
+					if  validate_eyr(&pp) == false {
+						println!("INVALID EYR: {}", pp.eyr);
+						flag = false;
+					}
+					if  validate_hgt(&pp) == false {
+						println!("INVALID HGT: {}", pp.hgt);
+						flag = false;
+					}
+					if  validate_hcl(&pp) == false {
+						println!("INVALID HCL: {}", pp.hcl);
+						flag = false;
+					}
+					if  validate_ecl(&pp) == false {
+						println!("INVALID ECL: {}", pp.ecl);
+						flag = false;
+					}
+					if  validate_pid(&pp) == false {
+						println!("INVALID PID: {}", pp.pid);
+						flag = false;
+					}
+
+					if flag == true {
 						valid_passport_count += 1;	
 					}
-					println!("Result: {:?}", result);	
-					println!();
 
 					// Reset the passport struct
 					pp.byr = 0;
@@ -109,88 +141,95 @@ where P: AsRef<Path>, {
         Ok(io::BufReader::new(file).lines())
 }
 
-fn validate_passport(passport: &Passport) -> bool {
+fn validate_parts_exist(passport: &Passport) -> bool {
 	let mut r: bool = true;
-
-//	println!("byr: {}, iyr: {}, eyr: {}", passport.byr, passport.iyr, passport.eyr);
-	
-	if (passport.byr == 0 || passport.byr < 1920 || passport.byr > 2002) || 
-	   (passport.iyr == 0 || passport.iyr < 2010 || passport.iyr > 2020) ||
-	   (passport.eyr == 0 || passport.eyr < 2020 || passport.eyr > 2030) {
-		println!("failed in part 1");
-		r = false;
-	}
-	if (passport.hgt == String::from("")) ||
+	if (passport.byr == 0) || 
+	   (passport.iyr == 0) ||
+	   (passport.eyr == 0) ||
+	   (passport.hgt == String::from("")) || 
 	   (passport.hcl == String::from("")) || 
 	   (passport.ecl == String::from("")) || 
 	   (passport.pid == String::from("")) {
-		println!("Failed in part 2");
 		r = false;
 	}
+	r
+}
 
-	if r == true {
-		// Check height
-		if passport.hgt.contains("cm") {
-			let h = passport.hgt.strip_suffix("cm").unwrap().parse::<usize>().unwrap();
-			if h < 150 || h > 193 {
-				println!("Failed in cm check");
-				r = false;
-			}
-		} else if passport.hgt.contains("in") {
-			let h = passport.hgt.strip_suffix("in").unwrap().parse::<usize>().unwrap();
-			if h < 59 || h > 76 {
-				r = false;
-				println!("Failed in in check");
-			}
-		}
-	}	
+fn validate_byr(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	if passport.byr < 1920 || passport.byr > 2002 {
+		r = false;
+	}
+	r
+}
 
-	if r == true {
-		// Check hair color
-		println!("hcl: {}", passport.hcl); 
+fn validate_iyr(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	if passport.iyr < 2010 || passport.iyr > 2020 {
+		r = false;
+	}
+	r
+}
 
-		if passport.hcl.starts_with("#") {
-			let t1 = passport.hcl.strip_prefix("#").unwrap().chars().all(|c| char::is_ascii_hexdigit(&c)); 
-			println!("stripped: {}", passport.hcl.strip_prefix("#").unwrap());
-			let t2 = passport.hcl.chars().count();
-			println!("count: {}", t2);
-			if t1 == false {
-				r = false;
-			} else if t2 != 7 {
-				r = false;
-			}
-		} else {
+fn validate_eyr(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	if passport.eyr < 2020 || passport.eyr > 2030 {
+		r = false;
+	}
+	r
+}
+	
+fn validate_hgt(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	if passport.hgt.contains("cm") {
+		let h = passport.hgt.strip_suffix("cm").unwrap().parse::<usize>().unwrap();
+		if h < 150 || h > 193 {
+			println!("Failed in cm check");
 			r = false;
 		}
-	}
-	
-	if r == true {
-		// Check eye color
-		match passport.ecl.as_str() {
-			"amb" => r = true,
-			"blu" => r = true,
-			"brn" => r = true,
-			"gry" => r = true,
-			"grn" => r = true,
-			"hzl" => r = true,
-			"oth" => r = true,
-			_ => r = false,
-		}	
-		if r == false {
-			println!("failed in ecl check");
+	} else if passport.hgt.contains("in") {
+		let h = passport.hgt.strip_suffix("in").unwrap().parse::<usize>().unwrap();
+		if h < 59 || h > 76 {
+			r = false;
+			println!("Failed in in check");
 		}
 	}
+	r
+}
 
-	if r == true {
-		// Check pid (9-digit number)
-		if passport.pid.len() != 9 {
-			println!("Failed in pid - too short");
-			r = false;	
-		}
-		if !passport.pid.chars().all(char::is_numeric) {
-			println!("Failed in pid, not numeric");
-			r = false;	
-		}
+fn validate_hcl(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	if passport.hcl.chars().count() != 7 {
+		r = false;
+	} else if passport.hcl.starts_with("#") == false {
+		r = false;
+	} else if passport.hcl.strip_prefix("#").unwrap().chars().all(|c| char::is_ascii_hexdigit(&c)) == false {
+		r = false;
+	}	
+	r
+}
+	
+fn validate_ecl(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	let e = passport.ecl.as_str();
+	if (e != "amb") &&
+	   (e != "blu") &&
+	   (e != "brn") &&
+	   (e != "gry") &&
+	   (e != "grn") &&
+	   (e != "hzl") &&
+	   (e != "oth") {
+		r = false;
+	}
+	r
+}
+
+fn validate_pid(passport: &Passport) -> bool {
+	let mut r: bool = true;
+	if passport.pid.len() != 9 {
+		r = false;
+	} else if passport.pid.chars().all(|c| char::is_ascii_digit(&c)) == false {
+		r = false;
 	}
 	r
 }
