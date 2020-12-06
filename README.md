@@ -7,5 +7,6 @@ Source: [Advent of Code](https://adventofcode.com/2020)
 - [x] Day 1: Report Repair 
 - [x] Day 2: Password Philosophy
 - [x] Day 3: Toboggan Trajectory
-- [ ] Day 4: Passport Processing
+- [x] Day 4: Passport Processing
 - [ ] Day 5: Binary Boarding
+- [ ] Day 6: Custom Customs
