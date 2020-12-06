@@ -18,6 +18,7 @@ fn main() {
         for (index, line) in lines.enumerate() {
             let line = line.unwrap();
             println!("{}: {}", index + 1, line);
+            println!("{}", get_row(&line));
         }
     }
 }
@@ -34,4 +35,34 @@ fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
 where P: AsRef<Path>, {
         let file = File::open(filename)?;
         Ok(io::BufReader::new(file).lines())
+}
+
+fn get_row(input: &str) -> u8 {
+    let row: u8 = 255;
+    let mut flag = true;
+
+    // Validate the input
+    if input.chars().count() != 10 {
+        println!("INVALID: Incorrect # of characters"); 
+        flag = false;
+    } 
+    for (i, c) in input.chars().enumerate() {
+        if i < 7 {
+            if c != 'F' && c != 'B' {
+                println!("INVALID: F/B section");
+                flag = false;
+            }
+        } else {
+            if c != 'R' && c != 'L' {
+                println!("INVALID: L/R section");
+                flag = false;
+            }
+        }
+    }
+
+    // Determine the row using the first 7 chars of the input
+    if flag == true {
+        println!("Looks good!");
+    }
+    row
 }
