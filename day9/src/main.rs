@@ -10,7 +10,8 @@ fn main() {
 	// Read in cmd line args
     let args: Vec<String> = env::args().collect();
     let f = get_filename(&args);
-
+	
+	// Load the stream into a vector for processing
 	let mut stream: Vec<usize> = Vec::new();
 	if let Ok(lines) = read_lines(f) {
 		for line in lines {
@@ -19,9 +20,10 @@ fn main() {
 		}
 	}	
 
+	// Part 1: Find the first "invalid" value in the stream
+	let mut invalid_num = 0;
 	let window_size: usize = 25;
 	for window in stream.windows(window_size + 1) {
-		//println!("{:?}", window);
 		let mut pairs: Vec<usize> = Vec::new();
 
 		// For the current window, we want all possible pair sums
@@ -32,7 +34,6 @@ fn main() {
 			while index < window_size {
 				let b = window.iter().nth(index).unwrap();	
 				pairs.push(a + b);
-				//println!("{} + {} = {}", a, b, a + b);
 				index += 1;
 			}
 		}
@@ -43,7 +44,38 @@ fn main() {
 		if pairs.contains(last) {
 			continue;
 		} else {
-			println!("The culprit: {}", last);
+			invalid_num = *last;
+			break;
+		}
+	}
+
+	// Part 2: Find a continuous stream of values that add up to our invalid num
+	let mut first = 0;
+	let mut last = 0;
+
+	for (i, num) in stream.iter().enumerate() {
+		first = *num;
+		let mut index = i + 1;
+		let mut sum = first;
+		let mut found = false;
+		let mut largest = first;
+		let mut smallest = first;
+		while sum < invalid_num {
+			last = *stream.iter().nth(index).unwrap();
+			if last < smallest {
+				smallest = last;	
+			} else if last > largest {
+				largest = last;
+			}
+			sum += last;
+			if sum == invalid_num {
+				println!("First: {}, Last: {}, Largest: {} + Smallest: {} = Sum: {}", first, last, largest, smallest, largest + smallest);
+				found = true;
+				break;
+			}
+			index += 1;
+		}
+		if found == true {
 			break;
 		}
 	}
