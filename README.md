@@ -10,3 +10,6 @@ Source: [Advent of Code](https://adventofcode.com/2020)
 - [x] Day 4: Passport Processing
 - [x] Day 5: Binary Boarding
 - [x] Day 6: Custom Customs
+- [ ] Day 7: Handy Haversacks
+- [ ] Day 8: Handheld Halting
+- [x] Day 9: Encoding Error
